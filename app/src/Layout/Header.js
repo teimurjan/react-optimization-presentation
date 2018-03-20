@@ -18,7 +18,7 @@ export default class extends React.Component {
     render() {
         const { title } = this.props;
         return (
-            <nav className="navbar navbar-expand-xs navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <Link className="navbar-brand" to="/">{title}</Link>
                 <button className="navbar-toggler" onClick={this.handleTogglerClick}>
                     <span className="navbar-toggler-icon"></span>

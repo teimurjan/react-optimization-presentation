@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Features = ({featuresNames}) => (
+const Features = ({ featuresNames }) => (
     <div className="wrapper">
-        <ul>
-            {featuresNames.map(({key, value}) => <li key={key}>{value}</li>)}
-        </ul>
+        {featuresNames.map(({ key, value }) => <h2 key={key}>{value}</h2>)}
     </div>
 );
 
@@ -16,7 +14,7 @@ Features.propTypes = {
 }
 
 Features.defaultProps = {
-    featuresNames: [{key: 'no-features', value: 'No features available'}]
+    featuresNames: [{ key: 'no-features', value: 'No features available' }]
 }
 
 export default Features;
