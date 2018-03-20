@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js"
+    "build": "NODE_ENV=production webpack --config webpack.config.prod.js"
   },
   "author": "Teimur Gasanov",
   "license": "ISC",
